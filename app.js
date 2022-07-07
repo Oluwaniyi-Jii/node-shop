@@ -6,8 +6,7 @@ const { engine } = require('express-handlebars');
 
 const app = express();
 
-app.engine('hbs', engine({extname: "hbs", defaultLayout: "main-layout"}));
-app.set('view engine', 'hbs')
+app.set('view engine', 'ejs')
 app.set('views', 'views');
 
 const adminData = require('./routes/admin');
